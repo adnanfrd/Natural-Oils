@@ -10,7 +10,6 @@ const Navbar = () => {
     <div className="bg-[#F96167] border-b border-gray-200">
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center py-3 px-4 space-y-4 sm:space-y-0">
         
-        {/* Contact Info */}
         <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 items-center">
           <a href="tel:+923017283867" className="flex items-center text-white">
             <FaPhoneAlt className="mr-2" />
@@ -26,7 +25,6 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Sign In / Sign Up & Profile */}
         <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 items-center">
           <div className="flex items-center space-x-2 text-white">
             <FaSignInAlt className="mr-1" />
@@ -40,7 +38,6 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Profile Dropdown */}
           <div className="relative">
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -68,7 +65,7 @@ const Navbar = () => {
             {dropdownOpen && (
               <ul className="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-lg py-2 z-10">
                 <li className="px-4 py-2 hover:bg-gray-100">
-                  <Link href="/profile">My Account</Link>
+                  <Link href="/myaccount">My Account</Link>
                 </li>
                 <li className="px-4 py-2 hover:bg-gray-100">
                   <Link href="/logout">Log Out</Link>
